@@ -1,0 +1,82 @@
+body{
+	color: #555;
+  	font-size: 1.5em;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*EXEMPLO 1*/
+a{
+	color:deepPink;
+}
+/*INSERINDO UM ICONE DEPOIS DO CONTEUDO COM O ::AFTER*/
+.icone::after{
+content: url(images/external-link.png);
+padding-left: 5px;/*Colocando um espaço entre a imagem e o conteúdo*/
+}
+/*EXEMPLO 2*/
+.elemento{
+	width:250px;
+	height:250px;
+	background-color: #009966;
+	/*opacity: .8;*/
+	position:relative;
+	margin: 100px auto;
+}
+.elemento::after{
+	content: "";
+	position: absolute;
+	display:block;
+	width: 250px;
+	height: 250px;
+	background-color: #009966;
+	/*opacity: .8;*/
+	transform: rotateZ(45deg);
+}
+/*EXEMPLO 3*/
+.grid{
+	margin: 40px auto;
+	max-width:700px;
+	text-align:center;
+}
+ul{
+	text-align: left;
+	display:inline-block;
+	list-style: none;
+	padding-left: 0;
+}
+.menu li{
+	float:left;
+	padding: .65em 1em;
+	border: 1px solid #eee;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	position: relative;
+}
+.menu li:hover{
+	background-color: deeppink;
+}
+li ul{
+	position:absolute;
+	top:100%;
+	left:0%;
+	width: 150px;
+	display:none;
+	z-index:1;
+}
+li ul li{
+	width:100%;
+}
+li:hover ul{
+	display:block;
+}
+li.has-submenu:after{
+	content: "\25bc";
+	font-size: .7em;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+li.has-submenu:hover:after{
+	content: "\25b2";
+}

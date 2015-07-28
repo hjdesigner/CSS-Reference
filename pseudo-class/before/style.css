@@ -1,0 +1,54 @@
+body{
+	color: #555;
+  	font-size: 1.5em;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+/*EXEMPLO 1*/
+blockquote::before{
+	content: "\201C";
+	/*ESTILIZANDO A CITAÇÃO*/
+	color: deeppink;
+	font-size: 3em;
+	position: relative;
+	top: 20px;
+}
+/*EXEMPLO 02*/
+.nota::before{
+	content: "Nota: ";
+	color:Red;
+}
+/*EXEMPLO 03*/
+.lista{
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+}
+.lista ul{
+	list-style: none;
+}
+.lista li::before{
+	content: url(images/check-icon.png);
+	padding-right: 10px;
+}
+/*EXEMPLO 04*/
+button{
+	padding: .5em;
+	font-size: 1em;
+	cursor: pointer;
+}
+button::before{
+	content: "New";
+	background-color: #FF0066;
+	border-radius: 3px 3px 3px 3px;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 5px;
+	margin-right: 5px;
+}

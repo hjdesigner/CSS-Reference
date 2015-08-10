@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+body{
+	color: #555;
+  	font-size: 1.5em;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+p{
+	width: 800px;
+	margin: 10px auto;
+}
+p:first-line{
+	font-family: 'Lobster', cursive;
+	color: deeppink;
+}

@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+body{
+	color: #555;
+  	font-size: 1.5em;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+.container{
+	width: 300px;
+	margin: 40px auto;
+	background-color: palevioletred;
+  	padding: 1em;
+}
+input{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 1em;
+	display: block;
+	border: 1px solid #aaa;
+	background-color: #FFF;
+}
+input::-webkit-input-placeholder{
+	color: deeppink;
+}
+input::-moz-placeholder{
+	color: deeppink;
+}
+input::-ms-input-placeholder{
+	color: deeppink;
+}
+input::-o-input-placeholder{
+	color: deeppink;
+}

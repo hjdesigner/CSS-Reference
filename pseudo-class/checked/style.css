@@ -1,0 +1,30 @@
+body{
+	color: #555;
+  	font-size: 1.5em;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+/*BOX COM OS EXEMPLOS*/
+.box{
+	width: 300px;
+	margin: 10px auto;
+}
+h2{
+	font-size: 1em;
+}
+/*EXEMPLO 1 - MUDANDO A COR E COLOCANDO UM RISCO EM CIMA DO TEXTO QUANDO SELECIONADO O INPUT TIPO CHECKBOX*/
+input[type = "checkbox"]:checked + label{
+	text-decoration: line-through;
+	color: deeppink;
+}
+/*EXEMPLO 2 - MUDANDO A COR E DANDO UM ESPAÇAMENTO QUANDO SELECIONADO O INPUT TIPO RADIO*/
+input[type = "radio"]:checked + label{
+	color: deeppink;
+	padding-left: 10px;
+}

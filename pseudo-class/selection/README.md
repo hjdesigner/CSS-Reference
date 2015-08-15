@@ -1,0 +1,6 @@
+## PSEUDO-CLASS ::SELECTION
+
+Utilizando a propriedade ::selection para estilizar um texto selecionado.
+
+* EXEMPLO 1 - MUDANDO O BACKGROUND E COLOR QUANDO SELECIONA O TEXTO
+* EXEMPLO 2 COLOCANDO UMA SOMBRA QUANDO SELECIONA O TEXTO

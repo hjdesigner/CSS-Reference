@@ -1,0 +1,38 @@
+body{
+	color: #555;
+  	font-size: 1.5em;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+/*EXEMPLO 1 - MUDANDO O BACKGROUND E COLOR QUANDO SELECIONA O TEXTO*/
+.primeiro{
+	width: 800px;
+	margin: 10px auto;
+}
+.primeiro::selection{
+	background-color: #000;
+	color: #FFF;
+}
+/*FAZENDO FUNCIONAR NO FIREFOX*/
+.primeiro::-moz-selection{
+	background-color: #000;
+	color: #FFF;
+}
+/*EXEMPLO 2 COLOCANDO UMA SOMBRA QUANDO SELECIONA O TEXTO*/
+.segundo{
+	width: 800px;
+	margin: 40px auto;
+}
+.segundo::selection{
+	text-shadow: 3px 3px 3px deeppink;
+}
+/*FAZENDO FUNCIONAR NO FIREFOX*/
+.segundo::-moz-selection{
+	text-shadow: 3px 3px 3px deeppink;
+}

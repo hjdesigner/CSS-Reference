@@ -1,0 +1,50 @@
+body{
+	color: #555;
+  	font-size: 100%;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1{
+	font-size: 1.5em;
+}
+h2{
+	font-size: 1.2em;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+/*BOX COM OS EXEMPLOS*/
+.elemento{
+	width: 800px;
+	margin: 10px auto;
+}
+
+article {
+  padding: 1em;
+  border: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+article:first-of-type {
+  border: 1px solid #ddd;
+}
+
+li:first-of-type {
+  text-decoration: underline;
+}
+
+p:first-of-type {
+  font-weight: bold;
+}
+
+a:first-of-type {
+  color: deepPink;
+}
+
+a:first-of-type::after {
+  content: "(" attr(href) ")";
+  color: deepPink;
+}

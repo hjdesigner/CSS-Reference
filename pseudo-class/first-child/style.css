@@ -1,0 +1,45 @@
+body{
+	color: #555;
+  	font-size: 100%;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1{
+	font-size: 1.5em;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+/*BOX COM OS EXEMPLOS*/
+.elemento{
+	width: 800px;
+	margin: 10px auto;
+}
+h2{
+	font-size: 1em;
+}
+
+
+/*MUDANDO A COR DO FILHO DENTRO DO SPAN*/
+span:first-child{
+	color: grey
+}
+/*JUNTANDO AS PROPRIEDADE FIRST CHILD E BEFORE - COLOCANDO UM ELEMENTO DINAMICAMENTE E MUDANDO A COR*/
+span:first-child::before {
+  content: "(";
+  color: deepPink;
+}
+/*JUNTANDO AS PROPRIEDADE FIRST CHILD E AFTER - COLOCANDO UM ELEMENTO DINAMICAMENTE E MUDANDO A COR*/
+span:first-child::after {
+  content: ")";
+  color: deepPink;
+}
+/*MUDANDO A COR DO PRIMEIRO FILHO DA LISTA E COLOCANDO UM UNDERLINE NO TEXTO*/
+li:first-child{
+	text-decoration: underline;
+	color: deepPink;
+}
+

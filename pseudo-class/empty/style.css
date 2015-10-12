@@ -1,0 +1,28 @@
+body{
+	color: #555;
+  	font-size: 1.5em;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+/*BOX COM OS EXEMPLOS*/
+.box{
+	width: 300px;
+	margin: 10px auto;
+}
+h2{
+	font-size: 1em;
+}
+/*MUDANDO A COR DO FUNDO EM ELEMENTOS VAZIO*/
+p:empty{
+	background-color: deeppink;
+	padding: 15px;
+}
+.pseudo:before{
+	content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid itaque fugit corporis odio similique at soluta suscipit delectus libero? Accusamus hic velit doloremque autem harum, magnam a deserunt officiis necessitatibus."
+}

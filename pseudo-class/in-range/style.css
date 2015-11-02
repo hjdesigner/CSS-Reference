@@ -1,0 +1,48 @@
+body{
+	color: #555;
+  	font-size: 100%;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1{
+	font-size: 1.5em;
+}
+h2{
+	font-size: 1.2em;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+/*BOX COM OS EXEMPLOS*/
+.elemento{
+	width: 800px;
+	margin: 10px auto;
+}
+/*ESTILIZANDO O CAMPO INPUT*/
+input{
+	width: 100px;
+	height: 40px;
+	font-size: 1.4em;
+	margin-right: 10px;
+}
+/*ESTILIZANDO O INPUT DO TIPO NUMBER QUANDO ESTIVER ENTRE 1 E 10*/
+input[type="number"]:in-range{
+	background-color: lightgreen;
+	color: green;
+}
+/*COLOCANDO UM TEXTO NO LABEL ENQUANTO ESTIVER ENTRE 1 E 10*/
+input:in-range + label:after{
+	content: "Escolha um numero de 1 a 10."
+}
+input[type="number"]:out-of-range{
+	background-color: salmon;
+	border:1px solid tomato;
+	color: whiter;
+}
+input:out-of-range + label:after{
+	content: "Esse valor está fora da faixa. Escolha um numero entre 1 a 10.";
+	color: tomato;
+}

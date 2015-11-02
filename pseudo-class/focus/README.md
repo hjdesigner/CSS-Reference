@@ -1,4 +1,4 @@
-## PSEUDO-CLASS ::FIRST-OF-TYPE
+## PSEUDO-CLASS ::FOCUS
 
 Utilizando a propriedade :focus para selecionar elementos focados pelo usuário.
 

@@ -1,0 +1,45 @@
+body{
+	color: #555;
+  	font-size: 100%;
+  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1{
+	font-size: 1.5em;
+}
+/*EXEMPLO TITULO*/
+.titulo::before{
+	content: "\2660";
+	padding-right: 5px;
+	font-size: 1.5em;
+	position: relative;
+}
+/*BOX COM OS EXEMPLOS*/
+.elemento{
+	width: 800px;
+	margin: 10px auto;
+}
+/*
+	ESTILIZANDO O LABEL E INPUT
+*/
+label,
+input{
+	width:100%;
+	margin-bottom: 5px;
+	font-size: .9em;
+	color:#000;
+}
+/*DEIXANDO O INPUT DO TYPO NUMBER NA COR VERMELHA QUANDO O VALOR FOR INVALIDO*/
+input[type="number"]:invalid{
+	background-color: #FF0000;
+	border:2px solid #C50202;
+}
+/*DEIXANDO O INPUT DO TYPO EMAIL NA COR ROXA QUANDO O VALOR FOR INVALIDO*/
+input[type="email"]:invalid{
+	background-color: #B612CC;
+	border:2px solid #9004A3;
+}
+/*DEIXANDO O INPUT DO TYPO URL NA COR AZUL QUANDO O VALOR FOR INVALIDO*/
+input[type="url"]:invalid{
+	background-color: #ADEAFF;
+	border:2px solid #61A1B6;
+}

@@ -1,38 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+*, ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
 body{
-	color: #555;
-  	font-size: 1.5em;
-  	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
-/*EXEMPLO TITULO*/
-.titulo::before{
-	content: "\2660";
-	padding-right: 5px;
-	font-size: 1.5em;
-	position: relative;
+.container{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
 }
-/*EXEMPLO 1 - MUDANDO O BACKGROUND E COLOR QUANDO SELECIONA O TEXTO*/
-.primeiro{
-	width: 800px;
-	margin: 10px auto;
+.row{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
 }
-.primeiro::selection{
-	background-color: #000;
-	color: #FFF;
+h1{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
 }
-/*FAZENDO FUNCIONAR NO FIREFOX*/
-.primeiro::-moz-selection{
-	background-color: #000;
-	color: #FFF;
+h1:before{
+  content: "</";
 }
-/*EXEMPLO 2 COLOCANDO UMA SOMBRA QUANDO SELECIONA O TEXTO*/
-.segundo{
-	width: 800px;
-	margin: 40px auto;
+h1:after{
+  content: ">";
 }
-.segundo::selection{
-	text-shadow: 3px 3px 3px deeppink;
+p{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 20px;
 }
-/*FAZENDO FUNCIONAR NO FIREFOX*/
-.segundo::-moz-selection{
-	text-shadow: 3px 3px 3px deeppink;
+p:first-child{
+	margin-top: 60px;
 }
+p::selection{
+  background-color: #000;
+  color:#FFF;
+}
+p::-moz-selection{
+  background-color: #000;
+  color:#FF1493;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

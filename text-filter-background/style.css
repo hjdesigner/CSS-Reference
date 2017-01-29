@@ -41,41 +41,16 @@ h1:before{
 h1:after{
   content: ">";
 }
-label{
-	width: 100%;
-	height: auto;
-	float: left;
-	font-size: 1.5em;
-	margin-top: 20px;
-	margin-bottom: 10px;
+h2{
+  width: 100%;
+  height: auto;
+  float: left;
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+  font-size: 24em;
+  background-image: url('http://henriquemelanda.com.br/css-components/assets/images/star-wars.jpg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-input[type="number"]{
-	width: 20%;
-	height: 40px;
-	float: left;
-	font-size: 1em;
-}
-input[type="email"]{
-	width: 100%;
-	height: 40px;
-	float: left;
-	font-size: 1em;
-}
-input:invalid{
-	background-color: tomato;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*

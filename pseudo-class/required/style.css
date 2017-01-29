@@ -49,21 +49,33 @@ label{
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
-input[type="number"]{
-	width: 20%;
-	height: 40px;
-	float: left;
-	font-size: 1em;
-}
-input[type="email"]{
+input{
 	width: 100%;
 	height: 40px;
 	float: left;
 	font-size: 1em;
 }
-input:invalid{
-	background-color: tomato;
+input[type="submit"]{
+  width: 20%;
+  height: 50px;
+  float: left;
+  margin-top: 20px;
 }
+input:required{
+  border-bottom: 4px solid tomato;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

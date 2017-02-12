@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,100);
+*, ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('http://cdn.pcwallart.com/images/obi-wan-kenobi-episode-3-wallpaper-1.jpg') top left / 51% 100% fixed no-repeat,
+              url('http://wallpapercave.com/wp/RsyHRBx.jpg') top right / 51% 100% fixed no-repeat;
+}
+h1{
+  width: 100%;
+  height: 1000px;
+  float: left;
+  margin: 2% 0 0 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
+}
+h1:before{
+  content: "</";
+}
+h1:after{
+  content: ">";
+}
